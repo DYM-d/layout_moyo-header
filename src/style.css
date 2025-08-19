@@ -27,15 +27,11 @@ body {
   text-align: center;
 }
 
-.nav {
-  display: block;
-  text-decoration: none;
-}
-
 .nav__link {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+  line-height: 60px;
 }
 
 .nav__list {
@@ -70,8 +66,25 @@ body {
 .logo {
   display: block;
   text-decoration: none;
-  size: 40px;
+  width: 40px;
   height: auto;
+}
+
+.nav__item a.is-active {
+  position: relative;
+  color: var(--primary-color);
+}
+
+.nav__item a.is-active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  border-radius: 15px;
+  left: 0;
 }
 
 .containerhover:hover {
@@ -87,35 +100,5 @@ body {
 }
 
 .link_hover:hover {
-  border-bottom: 1px solid var(--primary-color);
-  bottom: 0;
-}
-
-.hover:hover {
   color: var(--primary-color);
-}
-
-.line-height {
-  line-height: 60px;
-}
-
-.apple {
-  color: var(--primary-color);
-}
-
-.nav__line a.is-active {
-  position: relative;
-  color: var(--primary-color);
-}
-
-.nav__line a.is-active::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--primary-color);
-  position: absolute;
-  bottom: 0;
-  border-radius: 15px;
-  left: 0;
 }
