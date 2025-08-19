@@ -1,18 +1,18 @@
 html {
   font-family: roboto, sans-serif;
-  margin: 0;
-  font-weight: 500;
   font-size: 12px;
+  width: normal;
 }
 
 body {
   display: flex;
+  margin: 0;
   background-color: gray;
   flex-direction: center;
 }
 
 .header {
-  padding: 0 40px;
+  padding: 0 50px;
 }
 
 .container {
@@ -41,7 +41,6 @@ body {
   align-items: center;
   list-style: none;
   text-decoration: none;
-  height: 60px;
   margin: 0;
   padding: 0;
 }
@@ -50,7 +49,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-  height: 60px;
   display: flex;
   align-items: center;
   margin: 0 10px;
@@ -88,10 +86,15 @@ body {
 
 .link_hover:hover {
   border-bottom: 1px solid #00acdc;
+  bottom: 0;
 }
 
 .hover:hover {
   color: #00acdc;
+}
+
+.test {
+  line-height: 60px;
 }
 
 .apple {
@@ -110,7 +113,7 @@ body {
   height: 3px;
   background-color: #00acdc;
   position: absolute;
-  bottom: -22px;
+  bottom: 0;
   border-radius: 15px;
   left: 0;
 }
