@@ -1,3 +1,116 @@
-body {
+html {
+  font-family: roboto, sans-serif;
   margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+body {
+  display: flex;
+  background-color: gray;
+  flex-direction: center;
+}
+
+.header {
+  padding: 0 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.nav__item {
+  display: block;
+  text-decoration: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.txtdecor {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.d {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.d:first-child {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.d:last-child {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.logo {
+  display: block;
+  text-decoration: none;
+  size: 40px;
+  height: auto;
+}
+
+.containerhover:hover {
+  border: 1px solid #00acdc;
+}
+
+.containerhover:has(:hover) {
+  border: none;
+}
+
+.logohover:hover {
+  border: 1px solid #00acdc;
+}
+
+.link_hover:hover {
+  border-bottom: 1px solid #00acdc;
+}
+
+.hover:hover {
+  color: #00acdc;
+}
+
+.apple {
+  color: #00acdc;
+}
+
+.ab a.is-active {
+  position: relative;
+  color: #00acdc;
+}
+
+.ab a.is-active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #00acdc;
+  position: absolute;
+  bottom: -22px;
+  border-radius: 15px;
+  left: 0;
 }
