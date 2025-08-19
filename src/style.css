@@ -1,7 +1,6 @@
 html {
   font-family: roboto, sans-serif;
   font-size: 12px;
-  width: normal;
 }
 
 :root {
@@ -96,7 +95,7 @@ body {
   color: var(--primary-color);
 }
 
-.test {
+.line-height {
   line-height: 60px;
 }
 
@@ -113,7 +112,7 @@ body {
   content: '';
   display: block;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background-color: var(--primary-color);
   position: absolute;
   bottom: 0;
