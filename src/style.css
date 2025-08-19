@@ -4,11 +4,14 @@ html {
   width: normal;
 }
 
+:root {
+  --primary-color: #00acdc;
+}
+
 body {
   display: flex;
   margin: 0;
   background-color: gray;
-  flex-direction: center;
 }
 
 .header {
@@ -25,7 +28,7 @@ body {
   text-align: center;
 }
 
-.nav__item {
+.nav {
   display: block;
   text-decoration: none;
 }
@@ -36,7 +39,7 @@ body {
   text-transform: uppercase;
 }
 
-.txtdecor {
+.nav__list {
   display: flex;
   align-items: center;
   list-style: none;
@@ -45,7 +48,7 @@ body {
   padding: 0;
 }
 
-.d {
+.nav__item {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
@@ -55,12 +58,12 @@ body {
   text-align: center;
 }
 
-.d:first-child {
+.nav__item:first-child {
   margin: 0;
   margin-right: 10px;
 }
 
-.d:last-child {
+.nav__item:last-child {
   margin: 0;
   margin-left: 10px;
 }
@@ -73,7 +76,7 @@ body {
 }
 
 .containerhover:hover {
-  border: 1px solid #00acdc;
+  border: 1px solid var(--primary-color);
 }
 
 .containerhover:has(:hover) {
@@ -81,16 +84,16 @@ body {
 }
 
 .logohover:hover {
-  border: 1px solid #00acdc;
+  border: 1px solid var(--primary-color);
 }
 
 .link_hover:hover {
-  border-bottom: 1px solid #00acdc;
+  border-bottom: 1px solid var(--primary-color);
   bottom: 0;
 }
 
 .hover:hover {
-  color: #00acdc;
+  color: var(--primary-color);
 }
 
 .test {
@@ -98,20 +101,20 @@ body {
 }
 
 .apple {
-  color: #00acdc;
+  color: var(--primary-color);
 }
 
-.ab a.is-active {
+.nav__line a.is-active {
   position: relative;
-  color: #00acdc;
+  color: var(--primary-color);
 }
 
-.ab a.is-active::after {
+.nav__line a.is-active::after {
   content: '';
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #00acdc;
+  background-color: var(--primary-color);
   position: absolute;
   bottom: 0;
   border-radius: 15px;
